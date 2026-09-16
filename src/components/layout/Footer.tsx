@@ -11,46 +11,47 @@ export function Footer({ locale }: { locale: Locale }) {
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
-        <div>
-          <Logo />
-          <p className="muted" style={{ marginTop: "1rem", maxWidth: "22rem" }}>
-            {company.legalName}. {copy.serviceArea}. {copy.languages}.
+        <div className="footer-brand">
+          <Link href={getPath({ kind: "home", locale })} aria-label="Casa Expert">
+            <Logo />
+          </Link>
+          <p className="footer-blurb">
+            {copy.serviceArea}. {copy.languages}.
           </p>
-          <p style={{ marginTop: "1rem" }}>
+          <div className="footer-contact">
             <a href={`tel:${company.phone}`}>{company.phoneDisplay}</a>
-          </p>
-          <p>
-            <a href={whatsappHref()}>{t.whatsapp} {company.phoneDisplay}</a>
-          </p>
+            <a href={whatsappHref()}>{t.whatsapp}</a>
+          </div>
         </div>
-        <div className="stack">
+        <div className="footer-col">
           <strong>{t.services}</strong>
           <Link href={getPath({ kind: "service", locale, id: "solar-panels" })}>
             {locale === "es"
               ? "Placas solares"
               : locale === "ru"
                 ? "Солнечные панели"
-                : "Solar panel installation"}
+                : "Solar panels"}
           </Link>
           <Link href={getPath({ kind: "service", locale, id: "home-renovation" })}>
-            {locale === "es" ? "Reforma integral" : locale === "ru" ? "Ремонт под ключ" : "Full home renovation"}
+            {locale === "es" ? "Reforma integral" : locale === "ru" ? "Ремонт под ключ" : "Home renovation"}
           </Link>
-          <Link href={getPath({ kind: "services-index", locale })}>{copy.seeServices}</Link>
-          <Link href={getPath({ kind: "calculator", locale })}>{t.calculator}</Link>
+          <Link href={getPath({ kind: "calculator", locale })}>{copy.solarCta}</Link>
+          <Link href={getPath({ kind: "services-index", locale })}>{copy.footerAllServices}</Link>
         </div>
-        <div className="stack">
+        <div className="footer-col">
           <strong>{t.areas}</strong>
           <Link href={getPath({ kind: "area", locale, id: "alicante" })}>Alicante</Link>
           <Link href={getPath({ kind: "area", locale, id: "torrevieja" })}>Torrevieja</Link>
           <Link href={getPath({ kind: "area", locale, id: "orihuela-costa" })}>Orihuela Costa</Link>
         </div>
-        <div className="stack">
+        <div className="footer-col">
           <strong>{copy.footerLegal}</strong>
           <Link href={getPath({ kind: "privacy", locale })}>{copy.footerPrivacy}</Link>
           <Link href={getPath({ kind: "cookies", locale })}>{copy.footerCookies}</Link>
           <Link href={getPath({ kind: "legal-notice", locale })}>{copy.footerNotice}</Link>
           <Link href={getPath({ kind: "contact", locale })}>{t.contact}</Link>
           <Link href={getPath({ kind: "about", locale })}>{t.about}</Link>
+          <a href="/llms.txt">{copy.footerLlms}</a>
         </div>
       </div>
       <div className="container footer-bottom">

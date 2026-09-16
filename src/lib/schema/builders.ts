@@ -16,6 +16,18 @@ export function buildOrganizationSchema() {
     url: SITE_URL,
     telephone: company.phone,
     logo: `${SITE_URL}/brand/logo.svg`,
+    description:
+      "Residential renovation and solar panel installation on Spain's Costa Blanca, with English, Spanish and Russian support.",
+    knowsAbout: [
+      "Home renovation Costa Blanca",
+      "Solar panel installation Alicante",
+      "Residential PV legalisation Spain",
+      "Bathroom and kitchen renovation",
+    ],
+    areaServed: company.areaServed.map((name) => ({
+      "@type": "AdministrativeArea",
+      name,
+    })),
   };
 }
 

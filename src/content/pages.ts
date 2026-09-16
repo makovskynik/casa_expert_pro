@@ -39,10 +39,6 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
           a: "No. It is an indicative estimate. The quotation is confirmed after a site survey of the roof, board and access.",
         },
         {
-          q: "Which areas of Costa Blanca do you cover?",
-          a: "Alicante, Torrevieja and Orihuela Costa are the core area. Other Costa Blanca towns are booked when travel and the job make sense.",
-        },
-        {
           q: "Can you manage a project while the owner is abroad?",
           a: "Yes. You get one point of contact, a written scope and photo updates at agreed stages.",
         },
@@ -53,10 +49,6 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
         {
           q: "Do you handle permits and solar legalisation?",
           a: "Residential legalisation is included when the quote says so. Town-hall licences for renovation are listed as a line in the scope.",
-        },
-        {
-          q: "What warranties are provided?",
-          a: "Workmanship and manufacturer warranties are listed in the handover pack for the equipment and finishes actually installed.",
         },
         {
           q: "How long does a renovation or installation take?",
@@ -85,10 +77,6 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
           a: "No. Es una estimación orientativa. El presupuesto se confirma tras la visita a cubierta, cuadro y acceso.",
         },
         {
-          q: "¿Qué zonas de Costa Blanca cubren?",
-          a: "Alicante, Torrevieja y Orihuela Costa son el núcleo. Otros municipios se agendan cuando el desplazamiento y el trabajo encajan.",
-        },
-        {
           q: "¿Pueden dirigir la obra si el dueño está fuera?",
           a: "Sí: un interlocutor, alcance por escrito y fotos en las etapas acordadas.",
         },
@@ -99,10 +87,6 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
         {
           q: "¿Tramitan licencias y la legalización solar?",
           a: "La legalización residencial entra cuando el presupuesto lo dice. Las licencias de reforma figuran como partida de alcance.",
-        },
-        {
-          q: "¿Qué garantías hay?",
-          a: "La de ejecución y las del fabricante constan en el dossier de entrega del equipo y acabados instalados.",
         },
         {
           q: "¿Cuánto tarda una reforma o una instalación?",
@@ -131,10 +115,6 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
           a: "Нет. Это ориентир. Смета подтверждается после осмотра крыши, щита и доступа.",
         },
         {
-          q: "Какие районы Коста-Бланки вы покрываете?",
-          a: "Ядро — Аликанте, Торревьеха и Ориуэла Коста. Другие города — если логистика и объём работ имеют смысл.",
-        },
-        {
           q: "Можно вести проект, если хозяин за границей?",
           a: "Да: один контакт, письменный объём и фото на согласованных этапах.",
         },
@@ -145,10 +125,6 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
         {
           q: "Вы занимаетесь разрешениями и легализацией СЭС?",
           a: "Жилая легализация — если это написано в смете. Licencia на ремонт идёт отдельной строкой объёма.",
-        },
-        {
-          q: "Какие гарантии?",
-          a: "На работы и на оборудование производителя — в пакете сдачи по фактически установленному.",
         },
         {
           q: "Сколько длится ремонт или установка?",
@@ -631,32 +607,83 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
     en: {
       kind: "services-index",
       locale: "en",
-      seoTitle: "Services | Casa Expert Costa Blanca",
-      description: "Solar, full renovation, bathrooms, kitchens, building services and property preparation on the Costa Blanca.",
+      seoTitle: "Services | Renovation & solar Costa Blanca | Casa Expert",
+      description:
+        "Two primary lines on the Costa Blanca: full home renovation from about €550–€1,200 / m² and solar from about €4,950 (~3 kWp, no battery). Bathrooms, kitchens, building services and make-ready cleaning available.",
       h1: "Services",
-      summary: "Two core lines — full home renovation and solar — plus bathrooms, kitchens, building services and make-ready cleaning.",
-      answer: "Each service has its own page with scope, typical ranges and what happens after you request a site visit.",
+      summary:
+        "Choose renovation or solar first. Bathrooms and kitchens sit under renovation; solar care covers systems already installed.",
+      answer:
+        "Casa Expert’s two primary lines on the Costa Blanca are full home renovation (about €550–€1,200 / m² IVA incl. for mid-range apartments) and residential solar (installed from about €4,950 IVA incl. for ~3 kWp without a battery). Bathrooms and kitchens sit under renovation; maintenance, cleaning and upgrades are quoted for existing PV after a short brief. Core towns: Alicante, Torrevieja and Orihuela Costa.",
       updatedAt: u,
+      faqs: [
+        {
+          q: "What are Casa Expert’s main services on the Costa Blanca?",
+          a: "Two primary lines: full home renovation and residential solar panel installation. Bathrooms and kitchens sit under renovation; solar care covers maintenance, cleaning and upgrades for existing systems.",
+        },
+        {
+          q: "Where do you work?",
+          a: "Core towns are Alicante, Torrevieja and Orihuela Costa. Other Costa Blanca municipalities are considered after we confirm travel and access.",
+        },
+        {
+          q: "How do public prices work?",
+          a: "Published bands are indicative with IVA stated: renovation about €550–€1,200 / m² for mid-range apartments, solar from about €4,950 for ~3 kWp without battery. A site survey locks the written quote.",
+        },
+      ],
     },
     es: {
       kind: "services-index",
       locale: "es",
-      seoTitle: "Servicios | Casa Expert Costa Blanca",
-      description: "Solar, reforma integral, baños, cocinas, instalaciones y preparación de inmuebles en Costa Blanca.",
+      seoTitle: "Servicios | Reforma y solar Costa Blanca | Casa Expert",
+      description:
+        "Dos líneas principales en Costa Blanca: reforma integral desde unos 550–1.200 €/m² y solar desde unos 4.950 € (~3 kWp, sin batería). Baños, cocinas, instalaciones y limpiezas disponibles.",
       h1: "Servicios",
-      summary: "Dos líneas principales — reforma integral y solar — más baños, cocinas, instalaciones y limpieza de entrega.",
-      answer: "Cada servicio tiene página propia con alcance, rangos habituales y qué ocurre tras pedir visita.",
+      summary:
+        "Elija primero reforma o solar. Baños y cocinas van con la reforma; el cuidado solar cubre instalaciones ya montadas.",
+      answer:
+        "Las dos líneas principales de Casa Expert en Costa Blanca son la reforma integral (unos 550–1.200 €/m² con IVA en piso de gama media) y el solar residencial (desde unos 4.950 € con IVA por ~3 kWp sin batería). Baños y cocinas van con la reforma; mantenimiento, limpieza y ampliaciones se cotizan para FV existente tras un brief corto. Municipios núcleo: Alicante, Torrevieja y Orihuela Costa.",
       updatedAt: u,
+      faqs: [
+        {
+          q: "¿Cuáles son los servicios principales de Casa Expert?",
+          a: "Dos líneas: reforma integral e instalación solar residencial. Baños y cocinas van con la reforma; el cuidado solar cubre mantenimiento, limpieza y ampliaciones de instalaciones existentes.",
+        },
+        {
+          q: "¿Dónde trabajan?",
+          a: "Municipios núcleo: Alicante, Torrevieja y Orihuela Costa. Otros pueblos de Costa Blanca tras confirmar desplazamiento y acceso.",
+        },
+        {
+          q: "¿Cómo funcionan los precios publicados?",
+          a: "Bandas orientativas con IVA: reforma unos 550–1.200 €/m² en piso de gama media; solar desde unos 4.950 € por ~3 kWp sin batería. La visita cierra la oferta escrita.",
+        },
+      ],
     },
     ru: {
       kind: "services-index",
       locale: "ru",
-      seoTitle: "Услуги | Casa Expert Коста-Бланка",
-      description: "СЭС, ремонт под ключ, ванные, кухни, инженерия и подготовка объектов на Коста-Бланке.",
+      seoTitle: "Услуги | Ремонт и СЭС Коста-Бланка | Casa Expert",
+      description:
+        "Две основные линии на Коста-Бланке: ремонт под ключ около 550–1 200 €/м² и СЭС от ~4 950 € (~3 кВтp без батареи). Ванные, кухни, инженерия и подготовка объектов.",
       h1: "Услуги",
-      summary: "Два основных направления — ремонт дома и СЭС — плюс ванные, кухни, инженерия и клининговая сдача.",
-      answer: "У каждой услуги своя страница: объём, типичные диапазоны и что происходит после заявки на выезд.",
+      summary:
+        "Сначала ремонт или СЭС. Ванные и кухни — внутри ремонта; обслуживание СЭС — для уже установленных систем.",
+      answer:
+        "Две основные линии Casa Expert на Коста-Бланке — ремонт под ключ (около 550–1 200 €/м² с IVA для квартиры среднего сегмента) и жилая СЭС (от ~4 950 € с IVA за ~3 кВтp без батареи). Ванные и кухни — внутри ремонта; ТО, мойка и апгрейды — для уже стоящих СЭС после короткого брифа. Ядро: Аликанте, Торревьеха и Ориуэла Коста.",
       updatedAt: u,
+      faqs: [
+        {
+          q: "Какие основные услуги Casa Expert?",
+          a: "Две линии: ремонт под ключ и жилая СЭС. Ванные и кухни — внутри ремонта; обслуживание СЭС — ТО, мойка и апгрейды уже установленных систем.",
+        },
+        {
+          q: "Где вы работаете?",
+          a: "Ядро: Аликанте, Торревьеха и Ориуэла Коста. Другие города Коста-Бланки — после подтверждения выезда и доступа.",
+        },
+        {
+          q: "Как читать публичные цены?",
+          a: "Ориентиры с IVA: ремонт около 550–1 200 €/м² для квартиры среднего сегмента; СЭС от ~4 950 € за ~3 кВтp без батареи. Осмотр фиксирует письменную смету.",
+        },
+      ],
     },
   },
   "areas-index": {
@@ -706,7 +733,8 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       kind: "projects-index",
       locale: "es",
       seoTitle: "Proyectos | Casa Expert",
-      description: "Casos documentados en Costa Blanca: solar, reforma de piso, cocina y baño. Fotos pendientes de permiso.",
+      description:
+        "Estimaciones ilustrativas de solar y reforma en Costa Blanca — no un portafolio de obras fotografiadas.",
       h1: "Ejemplos de trabajo",
       summary: "Alcances orientativos para explicar cómo presupuestamos solar y reforma.",
       answer: "Estas páginas son estimaciones ilustrativas, no un portafolio de obras fotografiadas. Una ficha confirmada incluirá fotos, alcance acordado y cifras reales.",
@@ -716,7 +744,8 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       kind: "projects-index",
       locale: "ru",
       seoTitle: "Проекты | Casa Expert",
-      description: "Кейсы на Коста-Бланке: СЭС, ремонт квартиры, кухня и ванная. Фото ждут разрешения.",
+      description:
+        "Иллюстративные оценки СЭС и ремонта на Коста-Бланке — не портфолио снятых объектов.",
       h1: "Примеры расчётов",
       summary: "Ориентировочные объёмы, чтобы показать, как считаем СЭС и ремонт.",
       answer: "Это иллюстративные оценки, не портфолио снятых объектов. Подтверждённый кейс будет с фото, согласованным объёмом и фактическими цифрами.",

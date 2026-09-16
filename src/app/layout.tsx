@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   icons: {
     icon: "/brand/logo.svg",
   },
+  alternates: {
+    types: {
+      "text/plain": [
+        { url: "/llms.txt", title: "LLM context" },
+        { url: "/llms-full.txt", title: "LLM full context" },
+      ],
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

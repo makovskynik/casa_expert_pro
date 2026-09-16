@@ -35,6 +35,7 @@ export type LocalizedCopy = {
 
 export type NavCopy = {
   skip: string;
+  home: string;
   services: string;
   projects: string;
   process: string;
@@ -50,12 +51,18 @@ export type NavCopy = {
   close: string;
 };
 
+export type ProcessStep = { title: string; body: string };
+
 export type ServiceCopy = LocalizedCopy & {
   id: ServiceId;
   name: string;
   includes: string[];
   excludes: string[];
-  process: string[];
+  process: ProcessStep[];
+  /** Extra / aftercare offerings shown on the service page (e.g. solar maintenance). */
+  extras?: ProcessStep[];
+  /** Primary range shown beside the answer; kept out of the add-ons table when set. */
+  highlight?: PriceRow;
   priceRows: PriceRow[];
   faqs: FaqItem[];
   relatedAreaIds: AreaId[];
