@@ -42,12 +42,15 @@ export async function generateMetadata({
 
 export default async function CatchAllPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: string; slug?: string[] }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const { locale, slug } = await params;
+  const sp = await searchParams;
   if (!isLocale(locale)) notFound();
   const page = resolveInternal(locale, slug);
   if (!page) notFound();
-  return <PageView page={page} />;
+  return <PageView page={page} searchParams={sp} />;
 }

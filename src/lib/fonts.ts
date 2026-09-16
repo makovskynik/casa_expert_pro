@@ -8,13 +8,38 @@ export const manrope = localFont({
       style: "normal",
     },
     {
+      path: "../fonts/manrope-latin-500-normal.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
       path: "../fonts/manrope-latin-700-normal.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../fonts/manrope-latin-ext-400-normal.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/manrope-latin-ext-500-normal.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../fonts/manrope-latin-ext-700-normal.woff2",
       weight: "700",
       style: "normal",
     },
     {
       path: "../fonts/manrope-cyrillic-400-normal.woff2",
       weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/manrope-cyrillic-500-normal.woff2",
+      weight: "500",
       style: "normal",
     },
     {

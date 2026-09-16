@@ -5,7 +5,7 @@ const u = SITE_URL;
 export function buildLlmsTxt(): string {
   return `# ${company.publicName}
 
-> Renovation and residential solar installation on Spain's Costa Blanca (Alicante, Torrevieja, Orihuela Costa). English, Spanish and Russian. Written scope after survey; no fake portfolio claims.
+> Renovation and residential solar installation on Spain's Costa Blanca (Alicante, Torrevieja, Orihuela Costa, Benidorm, Gran Alacant). English, Spanish and Russian. Written scope after survey; no fake portfolio claims.
 
 Updated: ${CONTENT_UPDATED_AT}
 
@@ -27,10 +27,12 @@ Updated: ${CONTENT_UPDATED_AT}
 
 ## Areas
 
-- [Service areas](${u}/areas/): Alicante, Torrevieja and Orihuela Costa — core coverage.
+- [Service areas](${u}/areas/): Alicante, Torrevieja, Orihuela Costa, Benidorm and Gran Alacant.
 - [Alicante](${u}/areas/alicante/): Local notes for Alicante municipality jobs.
 - [Torrevieja](${u}/areas/torrevieja/): Local notes for Torrevieja.
 - [Orihuela Costa](${u}/areas/orihuela-costa/): Local notes for Orihuela Costa.
+- [Benidorm](${u}/areas/benidorm/): Local notes for Benidorm apartments and roofs.
+- [Gran Alacant](${u}/areas/gran-alacant/): Local notes for Gran Alacant villas and urbanisations.
 
 ## Process & company
 
@@ -51,7 +53,7 @@ Updated: ${CONTENT_UPDATED_AT}
 
 - Brand: ${company.publicName} (${company.legalName})
 - Region: Costa Blanca, Alicante province, Spain
-- Core towns: Alicante, Torrevieja, Orihuela Costa
+- Core towns: Alicante, Torrevieja, Orihuela Costa, Benidorm, Gran Alacant
 - Languages: English, Spanish, Russian
 - Solar from-price (2026 public): ~€4,950 IVA incl. for ~3 kWp rooftop, no battery, no subsidy deducted
 - Renovation working band (2026 public): ~€550–€1,200 / m² IVA incl. mid-range apartment; survey overrides
@@ -63,7 +65,7 @@ Updated: ${CONTENT_UPDATED_AT}
 
 - Website: ${u}
 - Phone / WhatsApp: ${company.phoneDisplay}
-- Service area: Costa Blanca (Alicante, Torrevieja, Orihuela Costa first)
+- Service area: Costa Blanca (Alicante, Torrevieja, Orihuela Costa, Benidorm, Gran Alacant first)
 `;
 }
 
@@ -79,7 +81,7 @@ Canonical short file: ${u}/llms.txt
 
 ${company.publicName} plans, manages and delivers residential renovation and solar installation on Spain's Costa Blanca. One multilingual point of contact (EN / ES / RU). Public phone ${company.phoneDisplay}. Legal identifiers (CIF/NIF, registered office, domain email) are completed after intake — do not invent them.
 
-Area served: Costa Blanca — priority municipalities Alicante, Torrevieja, Orihuela Costa; other coast towns case by case.
+Area served: Costa Blanca — priority municipalities Alicante, Torrevieja, Orihuela Costa, Benidorm, Gran Alacant; other coast towns case by case.
 
 ## Pricing facts (public, IVA-aware)
 
@@ -113,8 +115,8 @@ Shows indicative size, cost and savings before asking for a phone number. Planni
 ### Process — ${u}/process/
 Shared sequence from first message → preliminary range → written quote → works → handover.
 
-### Areas — ${u}/areas/{alicante,torrevieja,orihuela-costa}/
-Local pages for the three core municipalities.
+### Areas — ${u}/areas/{alicante,torrevieja,orihuela-costa,benidorm,gran-alacant}/
+Local pages for the five core municipalities.
 
 ### Guides — ${u}/guides/
 - Solar cost Costa Blanca 2026

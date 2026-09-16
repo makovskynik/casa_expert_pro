@@ -9,7 +9,13 @@ import { ServicesIndexPage } from "@/components/sections/ServicesIndexPage";
 import { SimplePage } from "@/components/sections/SimplePage";
 import type { ResolvedPage } from "@/lib/i18n/routing";
 
-export function PageView({ page }: { page: ResolvedPage }) {
+export function PageView({
+  page,
+  searchParams,
+}: {
+  page: ResolvedPage;
+  searchParams?: Record<string, string | string[] | undefined>;
+}) {
   switch (page.kind) {
     case "home":
       return <HomePage page={page} />;
@@ -24,7 +30,7 @@ export function PageView({ page }: { page: ResolvedPage }) {
     case "guide":
       return <GuidePage page={page} />;
     case "calculator":
-      return <CalculatorPage page={page} />;
+      return <CalculatorPage page={page} searchParams={searchParams} />;
     case "areas-index":
     case "projects-index":
     case "guides-index":

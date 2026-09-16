@@ -27,7 +27,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       locale: "en",
       seoTitle: "Renovations & solar panels in Costa Blanca | Casa Expert",
       description:
-        "Casa Expert: renovation and solar installation in Costa Blanca under one accountable team. Alicante, Torrevieja, Orihuela Costa. EN / ES / RU.",
+        "Casa Expert: renovation and solar installation in Costa Blanca under one accountable team. Alicante, Torrevieja, Orihuela Costa, Benidorm, Gran Alacant. EN / ES / RU.",
       h1: "Renovation and solar installation across Costa Blanca",
       summary: "One multilingual team to plan, manage and deliver your project, from the first survey to handover.",
       answer:
@@ -65,7 +65,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       locale: "es",
       seoTitle: "Reformas y placas solares en Costa Blanca | Casa Expert",
       description:
-        "Casa Expert: reforma y solar en Costa Blanca con un único equipo responsable. Alicante, Torrevieja, Orihuela Costa. EN / ES / RU.",
+        "Casa Expert: reforma y solar en Costa Blanca con un único equipo responsable. Alicante, Torrevieja, Orihuela Costa, Benidorm, Gran Alacant. EN / ES / RU.",
       h1: "Reformas e instalación solar en Costa Blanca",
       summary: "Un equipo multilingüe para planificar, dirigir y entregar su proyecto, de la primera visita a la entrega.",
       answer:
@@ -103,7 +103,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       locale: "ru",
       seoTitle: "Ремонт и солнечные панели на Коста-Бланке | Casa Expert",
       description:
-        "Casa Expert: ремонт и СЭС на Коста-Бланке одной командой. Аликанте, Торревьеха, Ориуэла Коста. EN / ES / RU.",
+        "Casa Expert: ремонт и СЭС на Коста-Бланке одной командой. Аликанте, Торревьеха, Ориуэла Коста, Бенидорм, Гран Алакант. EN / ES / RU.",
       h1: "Ремонт и солнечные панели на Коста-Бланке",
       summary: "Одна команда на трёх языках: от первого осмотра до сдачи объекта.",
       answer:
@@ -152,7 +152,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
         {
           heading: "How we work",
           body: [
-            "We cover Alicante, Torrevieja and Orihuela Costa, and other Costa Blanca towns when the job and travel make sense.",
+            "We cover Alicante, Torrevieja, Orihuela Costa, Benidorm and Gran Alacant, and other Costa Blanca towns when the job and travel make sense.",
             "Quotes follow a site survey. Public figures are indicative ranges with IVA unless a page says otherwise.",
           ],
         },
@@ -172,7 +172,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
         {
           heading: "Cómo trabajamos",
           body: [
-            "Cubramos Alicante, Torrevieja y Orihuela Costa, y otros municipios de Costa Blanca cuando el trabajo y el desplazamiento encajan.",
+            "Cubramos Alicante, Torrevieja, Orihuela Costa, Benidorm y Gran Alacant, y otros municipios de Costa Blanca cuando el trabajo y el desplazamiento encajan.",
             "El presupuesto sigue a la visita. Las cifras públicas son rangos orientativos con IVA salvo indicación contraria.",
           ],
         },
@@ -192,7 +192,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
         {
           heading: "Как работаем",
           body: [
-            "Ядро — Аликанте, Торревьеха и Ориуэла Коста; другие города Коста-Бланки — если объём и логистика имеют смысл.",
+            "Ядро — Аликанте, Торревьеха, Ориуэла Коста, Бенидорм и Гран Алакант; другие города Коста-Бланки — если объём и логистика имеют смысл.",
             "Смета после осмотра. Публичные цифры — ориентировочные диапазоны с IVA, если страница не говорит иное.",
           ],
         },
@@ -338,7 +338,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       description: `Call or WhatsApp ${company.phoneDisplay}. Service area Costa Blanca. EN / ES / RU.`,
       h1: "Contact Casa Expert",
       summary: "Phone and WhatsApp first. We reply in English, Spanish or Russian.",
-      answer: `Call or WhatsApp ${company.phoneDisplay}. We work across Costa Blanca — Alicante, Torrevieja and Orihuela Costa first — and book a site visit from that first conversation.`,
+      answer: `Call or WhatsApp ${company.phoneDisplay}. We work across Costa Blanca — Alicante, Torrevieja, Orihuela Costa, Benidorm and Gran Alacant first — and book a site visit from that first conversation.`,
       updatedAt: u,
     },
     es: {
@@ -348,7 +348,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       description: `Llame o WhatsApp ${company.phoneDisplay}. Zona Costa Blanca. EN / ES / RU.`,
       h1: "Contacto Casa Expert",
       summary: "Teléfono y WhatsApp primero. Respondemos en inglés, español o ruso.",
-      answer: `Llame o escriba por WhatsApp al ${company.phoneDisplay}. Trabajamos en Costa Blanca — Alicante, Torrevieja y Orihuela Costa primero — y concertamos la visita desde esa primera conversación.`,
+      answer: `Llame o escriba por WhatsApp al ${company.phoneDisplay}. Trabajamos en Costa Blanca — Alicante, Torrevieja, Orihuela Costa, Benidorm y Gran Alacant primero — y concertamos la visita desde esa primera conversación.`,
       updatedAt: u,
     },
     ru: {
@@ -358,7 +358,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       description: `Звонок или WhatsApp ${company.phoneDisplay}. Зона Costa Blanca. EN / ES / RU.`,
       h1: "Контакты Casa Expert",
       summary: "Сначала телефон и WhatsApp. Отвечаем на английском, испанском и русском.",
-      answer: `Звонок или WhatsApp ${company.phoneDisplay}. Работаем по Коста-Бланке — сначала Аликанте, Торревьеха и Ориуэла Коста — и назначаем выезд с первого разговора.`,
+      answer: `Звонок или WhatsApp ${company.phoneDisplay}. Работаем по Коста-Бланке — сначала Аликанте, Торревьеха, Ориуэла Коста, Бенидорм и Гран Алакант — и назначаем выезд с первого разговора.`,
       updatedAt: u,
     },
   },
@@ -491,7 +491,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       description: "Legal notice for casaexpertpro.com. Company identifiers pending confirmation.",
       h1: "Legal notice",
       summary: "Information society services notice — identifiers to complete after intake.",
-      answer: `Website: ${company.url}. Public name: ${company.publicName}. Phone: ${company.phoneDisplay}. Service area: Costa Blanca (Alicante, Torrevieja, Orihuela Costa). Legal name, CIF/NIF, registered office and email on the domain will replace this paragraph when confirmed. Content is informational; quotes exist only in writing.`,
+      answer: `Website: ${company.url}. Public name: ${company.publicName}. Phone: ${company.phoneDisplay}. Service area: Costa Blanca (Alicante, Torrevieja, Orihuela Costa, Benidorm, Gran Alacant). Legal name, CIF/NIF, registered office and email on the domain will replace this paragraph when confirmed. Content is informational; quotes exist only in writing.`,
       updatedAt: u,
     },
     es: {
@@ -501,7 +501,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       description: "Aviso legal de casaexpertpro.com. Identificadores pendientes de confirmación.",
       h1: "Aviso legal",
       summary: "Aviso de servicios de la sociedad de la información — datos a completar.",
-      answer: `Sitio: ${company.url}. Nombre público: ${company.publicName}. Teléfono: ${company.phoneDisplay}. Zona: Costa Blanca (Alicante, Torrevieja, Orihuela Costa). Razón social, CIF/NIF, domicilio y correo de dominio sustituirán este párrafo al confirmarse. El contenido es informativo; el presupuesto solo existe por escrito.`,
+      answer: `Sitio: ${company.url}. Nombre público: ${company.publicName}. Teléfono: ${company.phoneDisplay}. Zona: Costa Blanca (Alicante, Torrevieja, Orihuela Costa, Benidorm, Gran Alacant). Razón social, CIF/NIF, domicilio y correo de dominio sustituirán este párrafo al confirmarse. El contenido es informativo; el presupuesto solo existe por escrito.`,
       updatedAt: u,
     },
     ru: {
@@ -511,7 +511,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       description: "Правовое уведомление casaexpertpro.com. Реквизиты — после подтверждения.",
       h1: "Правовое уведомление",
       summary: "Уведомление об информационном обществе — реквизиты после intake.",
-      answer: `Сайт: ${company.url}. Публичное имя: ${company.publicName}. Телефон: ${company.phoneDisplay}. Зона: Коста-Бланка (Аликанте, Торревьеха, Ориуэла Коста). Юрлицо, CIF/NIF, адрес и почта на домене заменят этот абзац после подтверждения. Контент информационный; смета только письменно.`,
+      answer: `Сайт: ${company.url}. Публичное имя: ${company.publicName}. Телефон: ${company.phoneDisplay}. Зона: Коста-Бланка (Аликанте, Торревьеха, Ориуэла Коста, Бенидорм, Гран Алакант). Юрлицо, CIF/NIF, адрес и почта на домене заменят этот абзац после подтверждения. Контент информационный; смета только письменно.`,
       updatedAt: u,
     },
   },
@@ -553,9 +553,9 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       locale: "en",
       seoTitle: "Solar calculator Costa Blanca | Casa Expert",
       description:
-        "Indicative PV sizing for Alicante, Torrevieja and Orihuela Costa. Recommended size, cost range with IVA and savings before you share a phone number.",
-      h1: "Solar calculator for Costa Blanca homes",
-      summary: "Recommended system size, installation cost and potential annual savings.",
+        "Indicative PV sizing for Alicante, Torrevieja, Orihuela Costa, Benidorm and Gran Alacant. Recommended size, cost range with IVA and savings before you share a phone number.",
+      h1: "Solar calculator",
+      summary: "Size, cost and savings for Costa Blanca homes.",
       answer:
         "Estimate the recommended system size, installation cost and potential annual savings for your Costa Blanca home. The result is indicative; the final quotation follows a site survey.",
       updatedAt: u,
@@ -571,9 +571,9 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       locale: "es",
       seoTitle: "Calculadora de placas solares Costa Blanca | Casa Expert",
       description:
-        "Dimensionado orientativo para Alicante, Torrevieja y Orihuela Costa. Potencia, rango con IVA y ahorro antes de dejar el teléfono.",
-      h1: "Calculadora solar para viviendas en Costa Blanca",
-      summary: "Potencia recomendada, coste de instalación y ahorro anual potencial.",
+        "Dimensionado orientativo para Alicante, Torrevieja, Orihuela Costa, Benidorm y Gran Alacant. Potencia, rango con IVA y ahorro antes de dejar el teléfono.",
+      h1: "Calculadora solar",
+      summary: "Potencia, coste y ahorro para viviendas en Costa Blanca.",
       answer:
         "Estime la potencia recomendada, el coste de instalación y el ahorro anual potencial para su vivienda en Costa Blanca. El resultado es orientativo; el presupuesto final sigue a la visita técnica.",
       updatedAt: u,
@@ -589,9 +589,9 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       locale: "ru",
       seoTitle: "Калькулятор солнечных панелей Коста-Бланка | Casa Expert",
       description:
-        "Ориентир СЭС для Аликанте, Торревьехи и Ориуэлы Коста. Мощность, диапазон с IVA и экономия до телефона.",
-      h1: "Калькулятор СЭС для домов на Коста-Бланке",
-      summary: "Рекомендуемая мощность, стоимость монтажа и возможная годовая экономия.",
+        "Ориентир СЭС для Аликанте, Торревьехи, Ориуэлы Коста, Бенидорма и Гран Алаканта. Мощность, диапазон с IVA и экономия до телефона.",
+      h1: "Калькулятор СЭС",
+      summary: "Мощность, цена и экономия для домов на Коста-Бланке.",
       answer:
         "Оцените мощность, стоимость монтажа и возможную годовую экономию для дома на Коста-Бланке. Результат ориентировочный; итоговая смета после осмотра.",
       updatedAt: u,
@@ -614,7 +614,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       summary:
         "Choose renovation or solar first. Bathrooms and kitchens sit under renovation; solar care covers systems already installed.",
       answer:
-        "Casa Expert’s two primary lines on the Costa Blanca are full home renovation (about €550–€1,200 / m² IVA incl. for mid-range apartments) and residential solar (installed from about €4,950 IVA incl. for ~3 kWp without a battery). Bathrooms and kitchens sit under renovation; maintenance, cleaning and upgrades are quoted for existing PV after a short brief. Core towns: Alicante, Torrevieja and Orihuela Costa.",
+        "Casa Expert’s two primary lines on the Costa Blanca are full home renovation (about €550–€1,200 / m² IVA incl. for mid-range apartments) and residential solar (installed from about €4,950 IVA incl. for ~3 kWp without a battery). Bathrooms and kitchens sit under renovation; maintenance, cleaning and upgrades are quoted for existing PV after a short brief. Core towns: Alicante, Torrevieja, Orihuela Costa, Benidorm and Gran Alacant.",
       updatedAt: u,
       faqs: [
         {
@@ -623,7 +623,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
         },
         {
           q: "Where do you work?",
-          a: "Core towns are Alicante, Torrevieja and Orihuela Costa. Other Costa Blanca municipalities are considered after we confirm travel and access.",
+          a: "Core towns are Alicante, Torrevieja, Orihuela Costa, Benidorm and Gran Alacant. Other Costa Blanca municipalities are considered after we confirm travel and access.",
         },
         {
           q: "How do public prices work?",
@@ -641,7 +641,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       summary:
         "Elija primero reforma o solar. Baños y cocinas van con la reforma; el cuidado solar cubre instalaciones ya montadas.",
       answer:
-        "Las dos líneas principales de Casa Expert en Costa Blanca son la reforma integral (unos 550–1.200 €/m² con IVA en piso de gama media) y el solar residencial (desde unos 4.950 € con IVA por ~3 kWp sin batería). Baños y cocinas van con la reforma; mantenimiento, limpieza y ampliaciones se cotizan para FV existente tras un brief corto. Municipios núcleo: Alicante, Torrevieja y Orihuela Costa.",
+        "Las dos líneas principales de Casa Expert en Costa Blanca son la reforma integral (unos 550–1.200 €/m² con IVA en piso de gama media) y el solar residencial (desde unos 4.950 € con IVA por ~3 kWp sin batería). Baños y cocinas van con la reforma; mantenimiento, limpieza y ampliaciones se cotizan para FV existente tras un brief corto. Municipios núcleo: Alicante, Torrevieja, Orihuela Costa, Benidorm y Gran Alacant.",
       updatedAt: u,
       faqs: [
         {
@@ -650,7 +650,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
         },
         {
           q: "¿Dónde trabajan?",
-          a: "Municipios núcleo: Alicante, Torrevieja y Orihuela Costa. Otros pueblos de Costa Blanca tras confirmar desplazamiento y acceso.",
+          a: "Municipios núcleo: Alicante, Torrevieja, Orihuela Costa, Benidorm y Gran Alacant. Otros pueblos de Costa Blanca tras confirmar desplazamiento y acceso.",
         },
         {
           q: "¿Cómo funcionan los precios publicados?",
@@ -668,7 +668,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       summary:
         "Сначала ремонт или СЭС. Ванные и кухни — внутри ремонта; обслуживание СЭС — для уже установленных систем.",
       answer:
-        "Две основные линии Casa Expert на Коста-Бланке — ремонт под ключ (около 550–1 200 €/м² с IVA для квартиры среднего сегмента) и жилая СЭС (от ~4 950 € с IVA за ~3 кВтp без батареи). Ванные и кухни — внутри ремонта; ТО, мойка и апгрейды — для уже стоящих СЭС после короткого брифа. Ядро: Аликанте, Торревьеха и Ориуэла Коста.",
+        "Две основные линии Casa Expert на Коста-Бланке — ремонт под ключ (около 550–1 200 €/м² с IVA для квартиры среднего сегмента) и жилая СЭС (от ~4 950 € с IVA за ~3 кВтp без батареи). Ванные и кухни — внутри ремонта; ТО, мойка и апгрейды — для уже стоящих СЭС после короткого брифа. Ядро: Аликанте, Торревьеха, Ориуэла Коста, Бенидорм и Гран Алакант.",
       updatedAt: u,
       faqs: [
         {
@@ -677,7 +677,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
         },
         {
           q: "Где вы работаете?",
-          a: "Ядро: Аликанте, Торревьеха и Ориуэла Коста. Другие города Коста-Бланки — после подтверждения выезда и доступа.",
+          a: "Ядро: Аликанте, Торревьеха, Ориуэла Коста, Бенидорм и Гран Алакант. Другие города Коста-Бланки — после подтверждения выезда и доступа.",
         },
         {
           q: "Как читать публичные цены?",
@@ -691,30 +691,36 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       kind: "areas-index",
       locale: "en",
       seoTitle: "Service areas | Casa Expert",
-      description: "Alicante, Torrevieja and Orihuela Costa — core Costa Blanca coverage.",
+      description:
+        "Alicante, Torrevieja, Orihuela Costa, Benidorm and Gran Alacant — Costa Blanca coverage with dedicated pages.",
       h1: "Where we work",
-      summary: "Three core municipalities with real pages. More only with jobs and proof.",
-      answer: "Alicante, Torrevieja and Orihuela Costa are the launch areas. Other Costa Blanca towns are considered case by case.",
+      summary: "Five municipalities with real pages. Other Costa Blanca towns case by case.",
+      answer:
+        "Alicante, Torrevieja, Orihuela Costa, Benidorm and Gran Alacant each have their own page. Other coast towns are booked when travel and the job make sense.",
       updatedAt: u,
     },
     es: {
       kind: "areas-index",
       locale: "es",
       seoTitle: "Zonas de servicio | Casa Expert",
-      description: "Alicante, Torrevieja y Orihuela Costa — cobertura núcleo en Costa Blanca.",
+      description:
+        "Alicante, Torrevieja, Orihuela Costa, Benidorm y Gran Alacant — cobertura en Costa Blanca con páginas propias.",
       h1: "Dónde trabajamos",
-      summary: "Tres municipios con páginas reales. Más solo con obras y pruebas.",
-      answer: "Alicante, Torrevieja y Orihuela Costa son el arranque. Otros municipios, caso a caso.",
+      summary: "Cinco municipios con páginas reales. Otros pueblos, caso a caso.",
+      answer:
+        "Alicante, Torrevieja, Orihuela Costa, Benidorm y Gran Alacant tienen página propia. Otros municipios de costa se agendan cuando el desplazamiento y el trabajo encajan.",
       updatedAt: u,
     },
     ru: {
       kind: "areas-index",
       locale: "ru",
       seoTitle: "Зоны обслуживания | Casa Expert",
-      description: "Аликанте, Торревьеха и Ориуэла Коста — ядро на Коста-Бланке.",
+      description:
+        "Аликанте, Торревьеха, Ориуэла Коста, Бенидорм и Гран Алакант — покрытие на Коста-Бланке с отдельными страницами.",
       h1: "Где работаем",
-      summary: "Три муниципалитета с живыми страницами. Дальше — только с заказами.",
-      answer: "Аликанте, Торревьеха и Ориуэла Коста — старт. Остальные города Коста-Бланки — точечно.",
+      summary: "Пять муниципалитетов с живыми страницами. Остальные города — точечно.",
+      answer:
+        "Аликанте, Торревьеха, Ориуэла Коста, Бенидорм и Гран Алакант — у каждого своя страница. Другие города побережья — если логистика и объём имеют смысл.",
       updatedAt: u,
     },
   },

@@ -10,7 +10,7 @@ export const SERVICE_IDS = [
 ] as const;
 export type ServiceId = (typeof SERVICE_IDS)[number];
 
-export const AREA_IDS = ["alicante", "torrevieja", "orihuela-costa"] as const;
+export const AREA_IDS = ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"] as const;
 export type AreaId = (typeof AREA_IDS)[number];
 
 export const PROJECT_IDS = [

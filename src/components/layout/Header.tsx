@@ -14,27 +14,23 @@ import { useEffect, useState } from "react";
 export function Header({ locale }: { locale: Locale }) {
   const t = nav[locale];
   const [open, setOpen] = useState(false);
-  const [hidden, setHidden] = useState(false);
+  const [scrollHidden, setScrollHidden] = useState(false);
+  const [scrollPath, setScrollPath] = useState("");
   const pathname = usePathname();
   const current = resolveAnyPath(pathname) ?? { kind: "home" as const, locale };
   const alts = getAlternatePages(current);
   const calc = getPath({ kind: "calculator", locale });
   const servicesHref = getPath({ kind: "services-index", locale });
+  const hidden = !open && scrollPath === pathname && scrollHidden;
 
   const links = [
     { href: getPath({ kind: "process", locale }), label: t.process },
     { href: getPath({ kind: "areas-index", locale }), label: t.areas },
+    { href: getPath({ kind: "guides-index", locale }), label: t.guides },
   ];
 
   useEffect(() => {
-    setHidden(false);
-  }, [pathname]);
-
-  useEffect(() => {
-    if (open) {
-      setHidden(false);
-      return;
-    }
+    if (open) return;
 
     const readY = () =>
       window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
@@ -46,11 +42,17 @@ export function Header({ locale }: { locale: Locale }) {
       const delta = y - last;
       last = y;
       if (y < 24) {
-        setHidden(false);
+        setScrollPath(pathname);
+        setScrollHidden(false);
         return;
       }
-      if (delta > 8) setHidden(true);
-      else if (delta < -8) setHidden(false);
+      if (delta > 8) {
+        setScrollPath(pathname);
+        setScrollHidden(true);
+      } else if (delta < -8) {
+        setScrollPath(pathname);
+        setScrollHidden(false);
+      }
     };
 
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -59,13 +61,14 @@ export function Header({ locale }: { locale: Locale }) {
       window.removeEventListener("scroll", onScroll);
       document.removeEventListener("scroll", onScroll, true);
     };
-  }, [open]);
+  }, [open, pathname]);
 
   return (
     <header className={`site-header${hidden ? " is-hidden" : ""}`}>
       <div className="container header-inner">
-        <Link href={getPath({ kind: "home", locale })} aria-label="Casa Expert">
-          <Logo />
+        <Link href={getPath({ kind: "home", locale })} aria-label={t.home} className="brand-home">
+          <Logo className="desktop-only" />
+          <Logo compact className="mobile-only" />
         </Link>
         <nav className="nav-desktop" aria-label="Primary">
           <div className="nav-item">
@@ -136,9 +139,6 @@ export function Header({ locale }: { locale: Locale }) {
             {item.label}
           </Link>
         ))}
-        <Link href={getPath({ kind: "guides-index", locale })} onClick={() => setOpen(false)}>
-          {t.guides}
-        </Link>
         <Link href={calc} onClick={() => setOpen(false)}>
           {t.calculator}
         </Link>

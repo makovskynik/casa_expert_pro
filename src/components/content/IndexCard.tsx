@@ -10,7 +10,7 @@ export function IndexCard({
   text: string;
 }) {
   return (
-    <Link className="card service-card" href={href}>
+    <Link className="index-card" href={href}>
       <h3>{title}</h3>
       <p className="muted clamp-3">{text}</p>
     </Link>

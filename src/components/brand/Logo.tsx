@@ -1,27 +1,47 @@
-import { company } from "@/lib/content/site";
+type LogoVariant = "primary" | "reversed" | "mark";
 
-export function Logo({ compact = false }: { compact?: boolean }) {
+const SRC: Record<LogoVariant, { src: string; width: number; height: number }> = {
+  primary: {
+    src: "/brand/logo/casa-expert-logo-primary.svg",
+    width: 196,
+    height: 42,
+  },
+  reversed: {
+    src: "/brand/logo/casa-expert-logo-reversed.svg",
+    width: 210,
+    height: 45,
+  },
+  mark: {
+    src: "/brand/logo/casa-expert-mark-primary.svg",
+    width: 36,
+    height: 36,
+  },
+};
+
+export function Logo({
+  variant = "primary",
+  compact = false,
+  className = "",
+}: {
+  variant?: LogoVariant;
+  /** Mobile/compact header uses the mark only. */
+  compact?: boolean;
+  className?: string;
+}) {
+  const resolved = compact ? "mark" : variant;
+  const asset = SRC[resolved];
   return (
-    <span className="logo-mark">
-      <svg
-        width={compact ? 28 : 36}
-        height={compact ? 28 : 36}
-        viewBox="0 0 36 36"
-        aria-hidden="true"
-      >
-        <path
-          d="M27.5 18c0 5.25-4.25 9.5-9.5 9.5S8.5 23.25 8.5 18 12.75 8.5 18 8.5"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2.2"
-          strokeLinecap="round"
-        />
-        <circle cx="27.2" cy="8.8" r="2.35" fill="#D96D3B" />
-      </svg>
-      <span className="logo-text">
-        <strong>CASA EXPERT</strong>
-        <small>{company.geoDescriptor.toUpperCase()}</small>
-      </span>
+    <span className={`brand-logo brand-logo-${resolved}${className ? ` ${className}` : ""}`}>
+      {/* SVG logos stay as <img> so Next Image SVG restrictions do not apply. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={asset.src}
+        alt="Casa Expert Costa Blanca"
+        width={asset.width}
+        height={asset.height}
+        className="brand-logo-img"
+        decoding="async"
+      />
     </span>
   );
 }

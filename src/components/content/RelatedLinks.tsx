@@ -20,11 +20,17 @@ export function RelatedLinks({
   className?: string;
 }) {
   if (!items.length) return null;
+  const hasSummaries = !numbered && items.some((item) => item.summary);
+  const listClass = numbered
+    ? "service-guide-links"
+    : hasSummaries
+      ? "related-link-list"
+      : className;
   return (
     <section className={numbered ? "service-guides" : "service-areas"}>
       <h2>{title}</h2>
       {lead ? <p className={numbered ? undefined : "service-areas-lead"}>{lead}</p> : null}
-      <ul className={numbered ? "service-guide-links" : className}>
+      <ul className={listClass}>
         {items.map((item, i) =>
           numbered ? (
             <li key={item.href}>
@@ -36,7 +42,10 @@ export function RelatedLinks({
             </li>
           ) : (
             <li key={item.href}>
-              <Link href={item.href}>{item.title}</Link>
+              <div>
+                <Link href={item.href}>{item.title}</Link>
+                {item.summary ? <p className="muted">{item.summary}</p> : null}
+              </div>
             </li>
           ),
         )}

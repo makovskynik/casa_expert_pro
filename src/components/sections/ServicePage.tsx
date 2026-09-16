@@ -8,7 +8,7 @@ import { CtaRow } from "@/components/ui/CtaRow";
 import { FinalCta } from "@/components/ui/FinalCta";
 import { serviceMedia } from "@/content/media";
 import { nav, ui } from "@/content/ui";
-import { getArea, getGuide, getService } from "@/lib/content/registry";
+import { getArea, getGuide, getProject, getService } from "@/lib/content/registry";
 import { visitWhatsAppHref } from "@/lib/content/site";
 import { getPath, type ResolvedPage } from "@/lib/i18n/routing";
 import {
@@ -64,7 +64,7 @@ export function ServicePage({
         <div className="container service-page-inner">
           <Breadcrumbs
             items={[
-              { href: getPath({ kind: "home", locale }), label: "Casa Expert" },
+              { href: getPath({ kind: "home", locale }), label: n.home },
               { href: getPath({ kind: "services-index", locale }), label: n.services },
               { href: getPath(page), label: copy.name },
             ]}
@@ -94,14 +94,14 @@ export function ServicePage({
 
           <section className="service-answer" aria-labelledby="service-answer-title">
             <div className="service-answer-copy">
-              <h2 id="service-answer-title">{t.typicalRange}</h2>
+              <h2 id="service-answer-title">{isSolar ? t.typicalRange : t.typicalRangeReno}</h2>
               <p className="measure">{copy.answer}</p>
               <p className="notice">
                 {t.ivaIncluded} {t.surveyNeeded}
               </p>
             </div>
             {highlight ? (
-              <aside className="service-range" aria-label={t.typicalRange}>
+              <aside className="service-range" aria-label={isSolar ? t.typicalRange : t.typicalRangeReno}>
                 <p className="eyebrow">{highlight.item}</p>
                 <p className="service-range-value">{highlight.value}</p>
                 {highlight.note ? <p className="muted">{highlight.note}</p> : null}
@@ -168,8 +168,8 @@ export function ServicePage({
           </section>
 
           <RelatedLinks
-            title={t.serviceAreasTitle}
-            lead={t.serviceAreasLead}
+            title={isSolar ? t.serviceAreasTitleSolar : t.serviceAreasTitle}
+            lead={isSolar ? t.serviceAreasLeadSolar : t.serviceAreasLead}
             items={copy.relatedAreaIds.map((id) => ({
               href: getPath({ kind: "area", locale, id }),
               title: getArea(locale, id).name,
@@ -178,6 +178,7 @@ export function ServicePage({
 
           <RelatedLinks
             title={t.relatedGuides}
+            lead={t.relatedGuidesLead}
             numbered
             items={copy.relatedGuideIds.map((id) => {
               const guide = getGuide(locale, id);
@@ -185,6 +186,19 @@ export function ServicePage({
                 href: getPath({ kind: "guide", locale, id }),
                 title: guide.name,
                 summary: guide.summary,
+              };
+            })}
+          />
+
+          <RelatedLinks
+            title={t.relatedProjects}
+            lead={t.relatedProjectsLead}
+            items={copy.relatedProjectIds.map((id) => {
+              const project = getProject(locale, id);
+              return {
+                href: getPath({ kind: "project", locale, id }),
+                title: project.name,
+                summary: project.summary,
               };
             })}
           />

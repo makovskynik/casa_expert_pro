@@ -31,10 +31,6 @@ export const media = {
     src: "/media/service-cleaning.jpg",
     alt: "Interior after post-construction cleaning",
   },
-  process: {
-    src: "/media/process-works.jpg",
-    alt: "Building work underway on a residential site",
-  },
 } as const;
 
 export const serviceMedia = {

@@ -15,7 +15,7 @@ export function buildOrganizationSchema() {
     alternateName: [...company.alternateNames, company.publicName],
     url: SITE_URL,
     telephone: company.phone,
-    logo: `${SITE_URL}/brand/logo.svg`,
+    logo: `${SITE_URL}/brand/logo/casa-expert-logo-primary.svg`,
     description:
       "Residential renovation and solar panel installation on Spain's Costa Blanca, with English, Spanish and Russian support.",
     knowsAbout: [
@@ -39,7 +39,7 @@ export function buildLocalBusinessSchema(opts?: { areaName?: string; path?: stri
     legalName: company.legalName,
     url: opts?.path ? abs(opts.path) : SITE_URL,
     telephone: company.phone,
-    image: `${SITE_URL}/brand/logo.svg`,
+    image: `${SITE_URL}/brand/logo/casa-expert-logo-primary.svg`,
     areaServed: opts?.areaName
       ? { "@type": "AdministrativeArea", name: opts.areaName }
       : company.areaServed.map((name) => ({ "@type": "AdministrativeArea", name })),

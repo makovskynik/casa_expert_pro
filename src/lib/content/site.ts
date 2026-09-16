@@ -20,6 +20,7 @@ export const company = {
     "Alicante",
     "Torrevieja",
     "Orihuela Costa",
+    "Benidorm",
     "Gran Alacant",
     "Elche",
     "Santa Pola",
@@ -28,7 +29,7 @@ export const company = {
   sameAs: [] as string[],
 } as const;
 
-export const CONTENT_UPDATED_AT = "2026-09-15";
+export const CONTENT_UPDATED_AT = "2026-09-16";
 export const CALCULATION_MODEL_VERSION =
   process.env.CALCULATION_MODEL_VERSION ?? "2026.09.2";
 

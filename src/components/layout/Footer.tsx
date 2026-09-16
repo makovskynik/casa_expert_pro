@@ -13,7 +13,7 @@ export function Footer({ locale }: { locale: Locale }) {
       <div className="container footer-grid">
         <div className="footer-brand">
           <Link href={getPath({ kind: "home", locale })} aria-label="Casa Expert">
-            <Logo />
+            <Logo variant="reversed" />
           </Link>
           <p className="footer-blurb">
             {copy.serviceArea}. {copy.languages}.
@@ -43,9 +43,13 @@ export function Footer({ locale }: { locale: Locale }) {
           <Link href={getPath({ kind: "area", locale, id: "alicante" })}>Alicante</Link>
           <Link href={getPath({ kind: "area", locale, id: "torrevieja" })}>Torrevieja</Link>
           <Link href={getPath({ kind: "area", locale, id: "orihuela-costa" })}>Orihuela Costa</Link>
+          <Link href={getPath({ kind: "area", locale, id: "benidorm" })}>Benidorm</Link>
+          <Link href={getPath({ kind: "area", locale, id: "gran-alacant" })}>Gran Alacant</Link>
+          <Link href={getPath({ kind: "areas-index", locale })}>{t.areas}</Link>
         </div>
         <div className="footer-col">
           <strong>{copy.footerLegal}</strong>
+          <Link href={getPath({ kind: "guides-index", locale })}>{t.guides}</Link>
           <Link href={getPath({ kind: "privacy", locale })}>{copy.footerPrivacy}</Link>
           <Link href={getPath({ kind: "cookies", locale })}>{copy.footerCookies}</Link>
           <Link href={getPath({ kind: "legal-notice", locale })}>{copy.footerNotice}</Link>

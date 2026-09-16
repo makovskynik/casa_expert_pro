@@ -50,11 +50,13 @@ export function ServicesIndexPage({
       />
       <article className="sx">
         <header className="sx-intro">
-          <div className="container sx-intro-inner">
-            <p className="eyebrow">{copy.h1}</p>
-            <h1>{t.seeServices}</h1>
-            <p className="lead">{copy.summary}</p>
-            {copy.answer ? <p className="sx-answer measure">{copy.answer}</p> : null}
+          <div className="container">
+            <div className="sx-intro-inner">
+              <p className="eyebrow">{copy.h1}</p>
+              <h1>{t.seeServices}</h1>
+              <p className="lead">{copy.summary}</p>
+              {copy.answer ? <p className="sx-answer measure">{copy.answer}</p> : null}
+            </div>
           </div>
         </header>
 
@@ -69,7 +71,7 @@ export function ServicesIndexPage({
                 alt={renoImg.alt}
                 fill
                 priority
-                sizes="(max-width: 900px) 100vw, 50vw"
+                sizes="(max-width: 900px) 100vw, (max-width: 1280px) 50vw, 640px"
               />
             </figure>
             <div className="sx-path-copy">
@@ -99,7 +101,7 @@ export function ServicesIndexPage({
                 alt={solarImg.alt}
                 fill
                 priority
-                sizes="(max-width: 900px) 100vw, 50vw"
+                sizes="(max-width: 900px) 100vw, (max-width: 1280px) 50vw, 640px"
               />
             </figure>
             <div className="sx-path-copy">

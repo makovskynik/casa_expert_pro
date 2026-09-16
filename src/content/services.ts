@@ -13,7 +13,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
       name: "Solar panel installation",
       seoTitle: "Solar panel installation in Costa Blanca | Casa Expert",
       description:
-        "Residential solar installation in Alicante, Torrevieja and Orihuela Costa. Indicative 2026 ranges, legalisation and a calculator that shows results before any phone number.",
+        "Residential solar installation in Alicante, Torrevieja, Orihuela Costa, Benidorm and Gran Alacant. Indicative 2026 ranges, legalisation and a calculator that shows results before any phone number.",
       h1: "Solar panel installation in Costa Blanca",
       summary:
         "Design, supply, install and legalise rooftop PV for houses and villas on the Costa Blanca, with a documented scope and a site survey before the final price.",
@@ -78,7 +78,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
           a: "With a south-facing roof, 5,000 kWh typically points to about 3.15 kWp — 7 × 450 W panels — before evening loads, shade and export. The calculator shows the working.",
         },
         {
-          q: "Do you install in Alicante, Torrevieja and Orihuela Costa?",
+          q: "Do you install in Alicante, Torrevieja, Orihuela Costa, Benidorm and Gran Alacant?",
           a: "Yes. Those are our core towns on the Costa Blanca. Other municipalities on this coast are possible after we confirm travel and access.",
         },
         {
@@ -102,7 +102,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
           a: "Yes. You get one point of contact, a written scope and photo updates at agreed stages before handover.",
         },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["torrevieja-villa-solar"],
       relatedGuideIds: ["solar-cost-costa-blanca-2026", "how-many-solar-panels"],
     },
@@ -112,7 +112,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
       name: "Instalación de placas solares",
       seoTitle: "Instalación de placas solares en Costa Blanca | Casa Expert",
       description:
-        "Autoconsumo residencial en Alicante, Torrevieja y Orihuela Costa. Rangos 2026 con IVA, legalización y calculadora con resultado antes del teléfono.",
+        "Autoconsumo residencial en Alicante, Torrevieja, Orihuela Costa, Benidorm y Gran Alacant. Rangos 2026 con IVA, legalización y calculadora con resultado antes del teléfono.",
       h1: "Instalación de placas solares en Costa Blanca",
       summary:
         "Diseño, suministro, instalación y legalización de fotovoltaica en cubierta para viviendas en Costa Blanca, con alcance escrito y visita previa al precio final.",
@@ -177,7 +177,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
           a: "Con cubierta sur, 5.000 kWh apuntan a unos 3,15 kWp — 7 módulos de 450 W — antes de carga nocturna, sombra y vertido. La calculadora muestra el cálculo.",
         },
         {
-          q: "¿Instalan en Alicante, Torrevieja y Orihuela Costa?",
+          q: "¿Instalan en Alicante, Torrevieja, Orihuela Costa, Benidorm y Gran Alacant?",
           a: "Sí. Son nuestros municipios principales en Costa Blanca. Otros pueblos de la costa son posibles tras confirmar desplazamiento y acceso.",
         },
         {
@@ -201,7 +201,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
           a: "Sí. Un interlocutor, alcance escrito y fotos en etapas acordadas hasta la entrega.",
         },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["torrevieja-villa-solar"],
       relatedGuideIds: ["solar-cost-costa-blanca-2026", "how-many-solar-panels"],
     },
@@ -211,7 +211,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
       name: "Установка солнечных панелей",
       seoTitle: "Солнечные панели на Коста-Бланке | Casa Expert",
       description:
-        "Жилые СЭС в Аликанте, Торревьехе и Ориуэле Коста. Диапазоны 2026 с IVA, легализация и калькулятор с результатом до телефона.",
+        "Жилые СЭС в Аликанте, Торревьехе, Ориуэле Коста, Бенидорме и Гран Алаканте. Диапазоны 2026 с IVA, легализация и калькулятор с результатом до телефона.",
       h1: "Установка солнечных панелей на Коста-Бланке",
       summary:
         "Проектирование, поставка, монтаж и легализация кровельной СЭС для домов на Коста-Бланке: письменный объём и осмотр до финальной цены.",
@@ -276,7 +276,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
           a: "При южной крыше 5 000 кВт·ч — это около 3,15 кВтp, 7 × 450 Вт, до вечерней нагрузки, тени и экспорта. Расчёт виден в калькуляторе.",
         },
         {
-          q: "Вы ставите в Аликанте, Торревьехе и Ориуэле Коста?",
+          q: "Вы ставите в Аликанте, Торревьехе, Ориуэле Коста, Бенидорме и Гран Алаканте?",
           a: "Да. Это наши основные города на Коста-Бланке. Другие населённые пункты побережья возможны после подтверждения выезда и доступа.",
         },
         {
@@ -300,7 +300,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
           a: "Да. Один контакт, письменный объём и фотоотчёты на согласованных этапах до сдачи.",
         },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["torrevieja-villa-solar"],
       relatedGuideIds: ["solar-cost-costa-blanca-2026", "how-many-solar-panels"],
     },
@@ -370,7 +370,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
           a: "Yes, with phased access and protection. Occupied or villa programmes are quoted separately because labour and sequencing change.",
         },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["alicante-apartment-renovation"],
       relatedGuideIds: ["renovation-permits-costa-blanca"],
     },
@@ -438,7 +438,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
           a: "Sí, por fases y con protección. Programas habitados o de villa se cotizan aparte porque cambia la mano de obra.",
         },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["alicante-apartment-renovation"],
       relatedGuideIds: ["renovation-permits-costa-blanca"],
     },
@@ -506,7 +506,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
           a: "Да, этапами и с защитой. Жилой режим или вилла считаются отдельно — меняется труд и график.",
         },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["alicante-apartment-renovation"],
       relatedGuideIds: ["renovation-permits-costa-blanca"],
     },
@@ -540,7 +540,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
       faqs: [
         { q: "Do you renovate bathrooms in occupied apartments?", a: "Yes, with protection and a defined shut-off window. Programme is longer than an empty unit." },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["orihuela-kitchen-bath"],
       relatedGuideIds: ["renovation-permits-costa-blanca"],
     },
@@ -572,7 +572,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
       faqs: [
         { q: "¿Reforman baños en vivienda habitada?", a: "Sí, con protección y ventana de corte de agua. El plazo es mayor que en vacío." },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["orihuela-kitchen-bath"],
       relatedGuideIds: ["renovation-permits-costa-blanca"],
     },
@@ -604,7 +604,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
       faqs: [
         { q: "Делаете ванную в жилой квартире?", a: "Да, с защитой и окном отключения воды. Срок длиннее, чем в пустом объекте." },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["orihuela-kitchen-bath"],
       relatedGuideIds: ["renovation-permits-costa-blanca"],
     },
@@ -635,7 +635,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
       faqs: [
         { q: "Do you supply the kitchen furniture?", a: "We can install client-supplied kitchens or include a specified range. Mixed supply needs a written interface list." },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["orihuela-kitchen-bath"],
       relatedGuideIds: ["renovation-permits-costa-blanca"],
     },
@@ -664,7 +664,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
       faqs: [
         { q: "¿Suministran el mueble?", a: "Montamos cocina del cliente o una gama especificada. El suministro mixto exige lista de interfaces." },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["orihuela-kitchen-bath"],
       relatedGuideIds: ["renovation-permits-costa-blanca"],
     },
@@ -693,7 +693,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
       faqs: [
         { q: "Вы поставляете кухню?", a: "Можем смонтировать кухню клиента или включить согласованную линейку. Смешанная поставка — только со списком стыков." },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["orihuela-kitchen-bath"],
       relatedGuideIds: ["renovation-permits-costa-blanca"],
     },
@@ -727,7 +727,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
       faqs: [
         { q: "Can engineering run without a full renovation?", a: "Yes. Isolated AC, leaks or board faults are scheduled as standalone tickets." },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["alicante-apartment-renovation"],
       relatedGuideIds: ["renovation-permits-costa-blanca"],
     },
@@ -759,7 +759,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
       faqs: [
         { q: "¿Hacen instalaciones sin reforma integral?", a: "Sí: AC, fugas o averías de cuadro como tickets sueltos." },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["alicante-apartment-renovation"],
       relatedGuideIds: ["renovation-permits-costa-blanca"],
     },
@@ -791,7 +791,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
       faqs: [
         { q: "Можно инженерию без ремонта всей квартиры?", a: "Да: кондиционер, протечка или щит как отдельная заявка." },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["alicante-apartment-renovation"],
       relatedGuideIds: ["renovation-permits-costa-blanca"],
     },
@@ -821,7 +821,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
       faqs: [
         { q: "Is this the same as holiday-rental turnover?", a: "No. Turnover cleaning is a different product and is only offered if explicitly scoped." },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["alicante-apartment-renovation"],
       relatedGuideIds: ["renovation-permits-costa-blanca"],
     },
@@ -849,7 +849,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
       faqs: [
         { q: "¿Es el cambio de toallas del alquiler vacacional?", a: "No. El turnover es otro producto y solo si se acota." },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["alicante-apartment-renovation"],
       relatedGuideIds: ["renovation-permits-costa-blanca"],
     },
@@ -877,7 +877,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
       faqs: [
         { q: "Это смена белья для vacation rental?", a: "Нет. Turnover — другой продукт и только если он в объёме." },
       ],
-      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa"],
+      relatedAreaIds: ["alicante", "torrevieja", "orihuela-costa", "benidorm", "gran-alacant"],
       relatedProjectIds: ["alicante-apartment-renovation"],
       relatedGuideIds: ["renovation-permits-costa-blanca"],
     },

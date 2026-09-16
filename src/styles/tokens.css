@@ -1,13 +1,14 @@
 :root {
+  /* Casa Expert brand kit */
   --color-casa-ink: #14201f;
   --color-ink-soft: #253230;
   --color-limestone: #f3efe6;
-  --color-warm-paper: #fffdf8;
+  --color-warm-paper: #fff9ef;
   --color-solar-clay: #d96d3b;
-  --color-solar-clay-dark: #ae4b23;
+  --color-solar-clay-dark: #bd552b;
   --color-coastal-sage: #71877a;
-  --color-mineral-line: #d8d2c5;
-  --color-muted-text: #69716e;
+  --color-mineral-line: #d8d1c2;
+  --color-muted-text: #68716e;
   --color-white: #ffffff;
   --color-danger: #9b2c2c;
 
@@ -24,7 +25,8 @@
   --accent-dark: var(--color-solar-clay-dark);
   --accent-soft: var(--color-coastal-sage);
 
-  --font-sans: var(--font-manrope), "Manrope", system-ui, sans-serif;
+  --font-sans: var(--font-manrope), "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
 
   --text-display: clamp(2.625rem, 2.4vw + 1.6rem, 5.25rem);
   --text-h2: clamp(1.5rem, 1.4vw + 1rem, 2.25rem);
@@ -48,15 +50,15 @@
   --space-9: 6rem;
   --space-10: 7.5rem;
 
-  --container: 82.5rem;
-  --gutter: 1.5rem;
-  --gutter-mobile: 1.25rem;
+  --container: 80rem;
+  --gutter: 2.5rem;
+  --gutter-mobile: 1.5rem;
 
-  --radius-sm: 10px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
 
-  --shadow-float: 0 12px 40px rgba(20, 32, 31, 0.08);
+  --shadow-float: 0 16px 48px rgba(20, 32, 31, 0.1);
   --focus-ring: 0 0 0 3px var(--color-warm-paper), 0 0 0 6px var(--color-solar-clay);
 
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
