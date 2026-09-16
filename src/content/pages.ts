@@ -52,7 +52,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
         },
         {
           q: "How long does a renovation or installation take?",
-          a: "A standard rooftop solar job is often weeks, not months, after materials are agreed. A full apartment renovation is typically 8–16 weeks on site. The schedule is written into the quote.",
+          a: "A standard rooftop solar job is often days, not weeks, after materials are agreed. A full apartment renovation is typically 8–16 weeks on site. The schedule is written into the quote.",
         },
         {
           q: "Can renovation and solar work be combined?",
@@ -90,7 +90,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
         },
         {
           q: "¿Cuánto tarda una reforma o una instalación?",
-          a: "Una FV residencial suele ser cuestión de semanas tras cerrar materiales. Un piso completo, 8–16 semanas de obra. El plazo va en el presupuesto.",
+          a: "Una FV residencial suele resolverse en unos días tras cerrar materiales, no en semanas. Un piso completo, 8–16 semanas de obra. El plazo va en el presupuesto.",
         },
         {
           q: "¿Se pueden combinar reforma y solar?",
@@ -128,7 +128,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
         },
         {
           q: "Сколько длится ремонт или установка?",
-          a: "Типовая кровельная СЭС — недели после согласования материалов. Квартира целиком — часто 8–16 недель на объекте. Срок фиксируется в смете.",
+          a: "Типовая кровельная СЭС — обычно несколько дней на объекте после согласования материалов, не недели. Квартира целиком — часто 8–16 недель на объекте. Срок фиксируется в смете.",
         },
         {
           q: "Можно совместить ремонт и солнце?",

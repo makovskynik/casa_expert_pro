@@ -95,7 +95,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
         },
         {
           q: "How long does a standard rooftop job take?",
-          a: "After materials and access are locked, many residential installs finish in days to a couple of weeks on site. Legalisation and grid paperwork can run longer; the quote states both.",
+          a: "After materials and access are locked, many residential installs finish in a few days on site. Legalisation and grid paperwork can run longer; the quote states both.",
         },
         {
           q: "Can you manage the project if the owner is abroad?",
@@ -194,7 +194,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
         },
         {
           q: "¿Cuánto tarda una instalación residencial típica?",
-          a: "Con materiales y acceso cerrados, muchas instalaciones se resuelven en días o un par de semanas en obra. La legalización y papeles de red pueden alargarse; ambos plazos van en la oferta.",
+          a: "Con materiales y acceso cerrados, muchas instalaciones residenciales se cierran en unos días en obra. La legalización y papeles de red pueden alargarse; ambos plazos van en la oferta.",
         },
         {
           q: "¿Pueden gestionar el proyecto si el propietario está fuera?",
@@ -293,7 +293,7 @@ export const services: Record<ServiceId, Record<Locale, ServiceCopy>> = {
         },
         {
           q: "Сколько длится типичный монтаж на крыше?",
-          a: "После фиксации материалов и доступа многие жилые объекты закрываются за дни или пару недель на объекте. Легализация и сетевые бумаги могут идти дольше — оба срока в оферте.",
+          a: "После фиксации материалов и доступа многие жилые объекты закрываются за несколько дней на объекте. Легализация и сетевые бумаги могут идти дольше — оба срока в оферте.",
         },
         {
           q: "Можно вести проект, если владелец за границей?",
