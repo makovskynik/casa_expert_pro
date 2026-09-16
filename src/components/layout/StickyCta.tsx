@@ -47,7 +47,7 @@ export function StickyCta({ locale }: { locale: Locale }) {
         {t.call}
       </a>
       <a className="btn btn-primary" href={visit}>
-        {copy.visitCta}
+        {copy.stickyVisitCta}
       </a>
     </div>
   );

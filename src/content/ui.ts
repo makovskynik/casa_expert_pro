@@ -75,6 +75,7 @@ export const ui = {
   en: {
     solarCta: "Estimate solar costs",
     visitCta: "Request a site visit",
+    stickyVisitCta: "Site visit",
     renoCta: "Request a site visit",
     areaCta: "Request a site visit",
     projectCta: "Discuss this example",
@@ -238,6 +239,7 @@ export const ui = {
   es: {
     solarCta: "Estimar coste solar",
     visitCta: "Pedir visita técnica",
+    stickyVisitCta: "Pedir visita",
     renoCta: "Pedir visita técnica",
     areaCta: "Pedir visita técnica",
     projectCta: "Hablar de este ejemplo",
@@ -401,6 +403,7 @@ export const ui = {
   ru: {
     solarCta: "Оценить стоимость СЭС",
     visitCta: "Заказать выезд",
+    stickyVisitCta: "Выезд",
     renoCta: "Заказать выезд",
     areaCta: "Заказать выезд",
     projectCta: "Обсудить этот пример",
