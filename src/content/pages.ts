@@ -36,7 +36,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       faqs: [
         {
           q: "Is the solar calculator a final quote?",
-          a: "No. It is an indicative estimate. The quotation is confirmed after a site survey of the roof, board and access.",
+          a: "No. It is an indicative estimate. The quotation is confirmed after a site survey of the roof, equipment layout and installation complexity.",
         },
         {
           q: "Can you manage a project while the owner is abroad?",
@@ -74,7 +74,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       faqs: [
         {
           q: "¿La calculadora solar es un presupuesto final?",
-          a: "No. Es una estimación orientativa. El presupuesto se confirma tras la visita a cubierta, cuadro y acceso.",
+          a: "No. Es una estimación orientativa. El presupuesto se confirma tras la visita a cubierta, disposición del equipo y complejidad del montaje.",
         },
         {
           q: "¿Pueden dirigir la obra si el dueño está fuera?",
@@ -112,7 +112,7 @@ export const pages: Record<Key, Record<Locale, SimplePageCopy>> = {
       faqs: [
         {
           q: "Калькулятор СЭС — это финальная смета?",
-          a: "Нет. Это ориентир. Смета подтверждается после осмотра крыши, щита и доступа.",
+          a: "Нет. Это ориентир. Смета подтверждается после осмотра крыши, расположения оборудования и сложности монтажа.",
         },
         {
           q: "Можно вести проект, если хозяин за границей?",
