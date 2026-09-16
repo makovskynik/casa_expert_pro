@@ -1,13 +1,25 @@
 const DEFAULT_SITE_URL = "https://casaexpertpro.com";
 
 function resolveSiteUrl() {
-  const raw = process.env.NEXT_PUBLIC_SITE_URL?.trim().replace(/\/+$/, "") ?? "";
-  if (!raw) return DEFAULT_SITE_URL;
-  try {
-    return new URL(raw).origin;
-  } catch {
-    return DEFAULT_SITE_URL;
+  const configured = process.env.NEXT_PUBLIC_SITE_URL?.trim().replace(/\/+$/, "") ?? "";
+  if (configured) {
+    try {
+      return new URL(configured).origin;
+    } catch {
+      // fall through
+    }
   }
+
+  // On Vercel before the custom domain is attached, use the deployment host so
+  // absolute OG/canonical URLs resolve (Telegram/WhatsApp need a reachable image).
+  const vercelHost =
+    process.env.VERCEL_PROJECT_PRODUCTION_URL?.replace(/^https?:\/\//, "").replace(/\/+$/, "") ||
+    process.env.VERCEL_URL?.replace(/^https?:\/\//, "").replace(/\/+$/, "");
+  if (vercelHost) {
+    return `https://${vercelHost}`;
+  }
+
+  return DEFAULT_SITE_URL;
 }
 
 export const SITE_URL = resolveSiteUrl();
